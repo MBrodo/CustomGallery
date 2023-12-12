@@ -37,13 +37,12 @@ body {
 .item::after {
   content: "";
   position: absolute;
-  width: 18px;
+  width: 14px;
   height: 100%;
-  background-color: #fff;
-  right: calc(var(--index) * -1);
+  right: calc(var(--index) * -0.5);
 }
 .item::after {
-  left: calc(var(--index) * -1);
+  left: calc(var(--index) * -0.5);
 }
 .items .item:hover {
   transform: translateZ(calc(var(--index) * 10));
@@ -90,11 +89,8 @@ body {
   filter: inherit;
 }
 
-.items .item:active,
-.items .item:focus {
+.items .item:active {
   width: 28vw;
-  transform: translateZ(calc(var(--index) * 10));
   filter: inherit;
   z-index: 100;
-  margin: 0 0.45vw;
 }
